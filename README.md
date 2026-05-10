@@ -80,3 +80,12 @@ dotnet run --project Wanderverse.csproj etl
 - Update the data-loading process so it only adds new information without overwriting what’s already in the database.
 - Add instructions and examples so it’s easier for others to understand and test the API.
 - Test everything together to make sure players, locations, choices, and their paths all work correctly.
+
+## Sample Output
+Before (Players.csv)
+![Before](images/before.png)
+After (Players inside `game.db`, player IDs are assigned automatically)
+![After](images/after.png)
+The raw CSV Players are loaded into the database with a unique PlayerId. 
+![SQLite](images/sqlite.png)
+
