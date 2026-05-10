@@ -82,10 +82,10 @@ dotnet run --project Wanderverse.csproj etl
 - Test everything together to make sure players, locations, choices, and their paths all work correctly.
 
 ## Sample Output
-Before (Players.csv)
+- Before (Players.csv)
 ![Before](images/before.png)
-After (Players inside `game.db`, player IDs are assigned automatically)
+- After (Players inside `game.db`, player IDs are assigned automatically)
 ![After](images/after.png)
-The raw CSV Players are loaded into the database with a unique PlayerId. 
+- The raw CSV Players are loaded into the database with a unique PlayerId. 
 ![SQLite](images/sqlite.png)
 
