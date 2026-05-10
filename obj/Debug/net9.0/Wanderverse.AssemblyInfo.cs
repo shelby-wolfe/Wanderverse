@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Wanderverse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fde5b77005dffa2723517c189a300bd02f4d4893")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wanderverse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wanderverse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
