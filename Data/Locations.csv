@@ -1,0 +1,13 @@
+LocationId,Name,Description
+1,Town,"The starting town where players begin their journey."
+2,Forest,"A dark, dense forest full of secrets."
+3,Cave,"A mysterious cave with hidden treasures."
+4,Lake,"A peaceful lake surrounded by trees."
+5,Mountain,"A tall mountain with a scenic view."
+6,Desert,"A hot, arid desert with shifting sands."
+7,Stables,"Horses and animals are kept here."
+8,HiddenGrove,"A secret grove hidden in the forest."
+9,Gate,"The main gate of the town."
+10,Inn,"A cozy inn for resting players."
+
+

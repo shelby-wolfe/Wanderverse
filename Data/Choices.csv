@@ -1,0 +1,11 @@
+ChoiceId,FromLocationId,ToLocationId,ChoiceText
+1,1,2,"Go to the Forest from Town"
+2,1,9,"Exit through the Gate from Town"
+3,2,3,"Enter the Cave from Forest"
+4,2,8,"Explore the Hidden Grove from Forest"
+5,3,4,"Walk to the Lake from Cave"
+6,4,5,"Climb the Mountain from Lake"
+7,5,6,"Travel to the Desert from Mountain"
+8,6,7,"Visit the Stables from Desert"
+9,7,10,"Check in at the Inn from Stables"
+10,10,1,"Return to Town from Inn"
