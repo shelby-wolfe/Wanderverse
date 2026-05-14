@@ -11,7 +11,7 @@ namespace Wanderverse.ETL
     {
         public static void RunETL()
         {
-            // Path to your SQLite DB (make sure it exists and is initialized)
+            // Path to your SQLite DB 
             string dbPath = "game.db";
 
             // Initialize database

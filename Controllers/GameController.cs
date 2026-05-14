@@ -12,8 +12,8 @@ namespace Wanderverse.Controllers
 
         public GameController()
         {
-            _database = new Database("game.db");  // Ensure this path matches your actual database file
-            _database.InitializeDatabase();  // Ensure database is initialized
+            _database = new Database("game.db");  
+            _database.InitializeDatabase();  
         }
 
         // POST api/game/createplayer
@@ -37,7 +37,7 @@ namespace Wanderverse.Controllers
         {
             try
             {
-                // Validate input (you can add more validation as needed)
+                
                 if (moveRequest.PlayerId <= 0 || moveRequest.LocationId <= 0)
                 {
                     return BadRequest("Invalid PlayerId or LocationId.");

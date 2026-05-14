@@ -916,11 +916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/swolfe/Wanderverse/Wanderverse.csproj",
+      "projectUniqueName": "/home/swolfe/anotherone/Wanderverse/Wanderverse.csproj",
       "projectName": "Wanderverse",
-      "projectPath": "/home/swolfe/Wanderverse/Wanderverse.csproj",
+      "projectPath": "/home/swolfe/anotherone/Wanderverse/Wanderverse.csproj",
       "packagesPath": "/home/swolfe/.nuget/packages/",
-      "outputPath": "/home/swolfe/Wanderverse/obj/",
+      "outputPath": "/home/swolfe/anotherone/Wanderverse/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/swolfe/.nuget/NuGet/NuGet.Config"

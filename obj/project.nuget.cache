@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/XWF7AUEZuA=",
+  "dgSpecHash": "lRY5+YbDRcE=",
   "success": true,
-  "projectFilePath": "/home/swolfe/Wanderverse/Wanderverse.csproj",
+  "projectFilePath": "/home/swolfe/anotherone/Wanderverse/Wanderverse.csproj",
   "expectedPackageFiles": [
     "/home/swolfe/.nuget/packages/microsoft.aspnetcore.openapi/9.0.13/microsoft.aspnetcore.openapi.9.0.13.nupkg.sha512",
     "/home/swolfe/.nuget/packages/microsoft.data.sqlite/10.0.7/microsoft.data.sqlite.10.0.7.nupkg.sha512",
