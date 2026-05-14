@@ -11,7 +11,6 @@ namespace Wanderverse.ETL
     {
         public static void RunETL()
         {
-            // Path to your SQLite DB 
             string dbPath = "game.db";
 
             // Initialize database
@@ -24,7 +23,7 @@ namespace Wanderverse.ETL
             ETLLoader.LoadChoices(db, "Data/Choices.csv");
             ETLLoader.LoadPlayers(db, "Data/Players.csv");
 
-            // Optional: generate random player paths (20 moves per player)
+            // Generate random player paths (20 moves per player)
             ETLLoader.LoadRandomPlayerPaths(db, 20);
 
             Console.WriteLine("ETL completed successfully!");
