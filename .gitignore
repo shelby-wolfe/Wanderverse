@@ -6,3 +6,4 @@ game.db
 *.log
 .DS_Store
 Thumbs.dbobj/
+obj/
