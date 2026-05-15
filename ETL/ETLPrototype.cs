@@ -104,7 +104,11 @@ namespace Wanderverse.ETL
                     Console.WriteLine($"Skipping empty username on line {i+1}");
                     continue;
                 }
-
+                if (db.PlayerExists(username))
+                {
+                    Console.WriteLine($"Player already exists, skipping: {username}");
+                    continue;
+                }
                 db.AddPlayer(username);
             }
         }

@@ -59,8 +59,10 @@ namespace Wanderverse.Data
             checkCmd.CommandText = "SELECT COUNT(*) FROM Player WHERE Username = $username";
             checkCmd.Parameters.AddWithValue("$username", username);
             var exists = Convert.ToInt32(checkCmd.ExecuteScalar()) > 0;
-            if (exists)            {
-                throw new Exception($"Player with username '{username}' already exists.");
+
+            if (exists)            
+            {
+                return;
             }
 
             var cmd = connection.CreateCommand();
@@ -168,5 +170,39 @@ namespace Wanderverse.Data
             }
             return paths;
         }
+        public bool PlayerExists(string username)
+        {
+            using var connection = new SqliteConnection(_connectionString);
+            connection.Open();
+
+            var cmd = connection.CreateCommand();
+            cmd.CommandText = "SELECT COUNT(*) FROM Player WHERE Username = $username";
+            cmd.Parameters.AddWithValue("$username", username);
+            return Convert.ToInt32(cmd.ExecuteScalar()) > 0;
+        }
+        public bool LocationExists(int locationId)
+        {
+            using var connection = new SqliteConnection(_connectionString);
+            connection.Open();
+
+            var cmd = connection.CreateCommand();
+            cmd.CommandText = "SELECT 1 FROM Location WHERE LocationId = $id LIMIT 1";
+            cmd.Parameters.AddWithValue("$id", locationId);
+
+            return cmd.ExecuteScalar() != null;
+        }
+
+        public bool ChoiceExists(int choiceId)
+        {
+            using var connection = new SqliteConnection(_connectionString);
+            connection.Open();
+
+            var cmd = connection.CreateCommand();
+            cmd.CommandText = "SELECT 1 FROM Choice WHERE ChoiceId = $id LIMIT 1";
+            cmd.Parameters.AddWithValue("$id", choiceId);
+
+            return cmd.ExecuteScalar() != null;
+        }
+
     }
 }
